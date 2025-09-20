@@ -55,7 +55,7 @@ const SignUpPage = () => {
                         Create your account
                     </CardTitle>
                     <CardDescription className="text-muted-foreground">
-                        Start transforming your videos into engaging content with VidScribe
+                        Start transforming your videos into engaging content with {process.env.NEXT_PUBLIC_APP_NAME}
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -197,7 +197,7 @@ const SignUpPage = () => {
 
                     <p className="mt-6 text-center text-sm text-muted-foreground">
                         Already have an account?{' '}
-                        <Link href="/auth/signin" className="text-primary hover:text-primary/80 transition-colors font-medium">
+                        <Link href="/signin" className="text-primary hover:text-primary/80 transition-colors font-medium">
                             Sign in
                         </Link>
                     </p>

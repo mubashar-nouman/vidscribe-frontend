@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { cn, generateMetadata } from "@/functions";
 import { inter, satoshi } from "@/constants";
 import { Toaster } from "@/components/ui/sonner";
-import { Providers } from "@/components";
+import { ThemeProvider } from "next-themes";
 
 export const metadata = generateMetadata();
 
@@ -25,9 +25,14 @@ export default function RootLayout({
                     theme="dark"
                     position="top-right"
                 />
-                <Providers>
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="dark"
+                    enableSystem={false}
+                    disableTransitionOnChange={false}
+                >
                     {children}
-                </Providers>
+                </ThemeProvider>
             </body>
         </html>
     );

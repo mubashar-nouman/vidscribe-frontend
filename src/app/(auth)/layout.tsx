@@ -16,7 +16,7 @@ const AuthLayout = ({ children }: Props) => {
             <header className="relative z-10 p-6">
                 <Link href="/" className="flex items-center gap-2 text-foreground hover:text-primary transition-colors">
                     <Icons.icon className="w-8 h-8" />
-                    <span className="text-xl font-semibold font-heading">VidScribe</span>
+                    <span className="text-xl font-semibold font-heading">{process.env.NEXT_PUBLIC_APP_NAME}</span>
                 </Link>
             </header>
 

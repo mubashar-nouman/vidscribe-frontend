@@ -52,7 +52,7 @@ const SignInPage = () => {
                         Welcome back
                     </CardTitle>
                     <CardDescription className="text-muted-foreground">
-                        Sign in to your VidScribe account to continue transforming videos into content
+                        Sign in to your {process.env.NEXT_PUBLIC_APP_NAME} account to continue transforming videos into content
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -110,7 +110,7 @@ const SignInPage = () => {
                                 </Label>
                             </div>
                             <Link 
-                                href="/auth/forgot-password" 
+                                href="/forgot-password" 
                                 className="text-sm text-primary hover:text-primary/80 transition-colors"
                             >
                                 Forgot password?
@@ -153,7 +153,7 @@ const SignInPage = () => {
 
                     <p className="mt-6 text-center text-sm text-muted-foreground">
                         Don't have an account?{' '}
-                        <Link href="/auth/signup" className="text-primary hover:text-primary/80 transition-colors font-medium">
+                        <Link href="/signup" className="text-primary hover:text-primary/80 transition-colors font-medium">
                             Sign up
                         </Link>
                     </p>

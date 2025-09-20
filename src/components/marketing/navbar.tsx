@@ -50,9 +50,14 @@ const Navbar = () => {
                         </div>
                         <div className="items-center flex gap-2 lg:gap-4">
                             <ThemeToggle />
+                            <Button size="sm" variant="ghost" asChild className="hidden sm:flex">
+                                <Link href="/signin">
+                                    Sign In
+                                </Link>
+                            </Button>
                             <Button size="sm" variant="white" asChild className="hidden sm:flex">
-                                <Link href="/dashboard">
-                                    Dashboard
+                                <Link href="/signup">
+                                    Sign Up
                                 </Link>
                             </Button>
                             <Button

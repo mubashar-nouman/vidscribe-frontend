@@ -150,6 +150,24 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         </AccordionItem>
                     </Accordion>
                 </ul>
+                
+                {/* Auth Buttons */}
+                <div className="flex flex-col gap-3 mt-6 pt-6 border-t border-border/20">
+                    <Link 
+                        href="/auth/signin" 
+                        onClick={() => setIsOpen(false)}
+                        className="w-full px-4 py-3 text-center text-foreground border border-border rounded-lg hover:bg-muted/20 transition-colors"
+                    >
+                        Sign In
+                    </Link>
+                    <Link 
+                        href="/auth/signup" 
+                        onClick={() => setIsOpen(false)}
+                        className="w-full px-4 py-3 text-center text-white bg-primary rounded-lg hover:bg-primary/90 transition-colors"
+                    >
+                        Sign Up
+                    </Link>
+                </div>
             </motion.div>
         </div>
     )
